@@ -22,6 +22,8 @@
 		BE3FD7031C3B934E0082FCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3FD7061C3B934E0082FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3FD7081C3B934E0082FCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3FD70E1C3B94B30082FCC0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		BE3FD70F1C3B94B30082FCC0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		BE3FD6F01C3B934E0082FCC0 = {
 			isa = PBXGroup;
 			children = (
+				BE3FD70E1C3B94B30082FCC0 /* LICENSE.md */,
+				BE3FD70F1C3B94B30082FCC0 /* README.md */,
 				BE3FD6FB1C3B934E0082FCC0 /* Instafilter */,
 				BE3FD6FA1C3B934E0082FCC0 /* Products */,
 			);
@@ -286,6 +290,7 @@
 				BE3FD70D1C3B934E0082FCC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

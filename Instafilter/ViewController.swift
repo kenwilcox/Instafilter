@@ -44,7 +44,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func save(sender: AnyObject) {
-    
+    UIImageWriteToSavedPhotosAlbum(imageView.image!, self, "image:didFinishSavingWithError:contextInfo:", nil)
   }
   
   @IBAction func intensityChanged(sender: AnyObject) {
@@ -79,6 +79,18 @@ class ViewController: UIViewController {
     currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
     
     applyProcessing()
+  }
+  
+  func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo:UnsafePointer<Void>) {
+    if error == nil {
+      let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .Alert)
+      ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+      presentViewController(ac, animated: true, completion: nil)
+    } else {
+      let ac = UIAlertController(title: "Save error", message: error?.localizedDescription, preferredStyle: .Alert)
+      ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+      presentViewController(ac, animated: true, completion: nil)
+    }
   }
 }
 
